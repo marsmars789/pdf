@@ -31,7 +31,7 @@ def fun(file, name):
     with open(f"{name}.pdf", "rb") as f:
         data = f.read()
     
-    add_file_to_zip(f"{name}.pdf", "result.zip")
+    add_file_to_zip(f"{name}.pdf")
     os.remove(f"{name}.pdf")
 
     return data
